@@ -1,0 +1,185 @@
+@import '../../assets/mixins.scss';
+
+.footer {
+    margin: 50px 0;
+
+    &_box {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+    }
+
+    &_top {
+        display: flex;
+        justify-content: space-around;
+
+        @include media (700px) {
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        &_card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+
+            @include media (800px) {
+                gap: 16px;
+            }
+
+
+        }
+
+        &_text {
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: -0.4000000059604645px;
+
+            @include media (800px) {
+                font-size: 16px;
+            }
+        }
+
+        &_link {
+            padding: 16px 24px;
+            font-family: 'Inter', sans-serif;
+            font-size: 15px !important;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: -0.3199999928474426px;
+            background-color: #F7F7F5;
+            border-radius: 56px;
+            transition: .2s;
+
+            &:hover {
+                background-color: #004F2E;
+                color: white;
+            }
+        }
+    }
+
+    &_border {
+        width: 100%;
+        height: 2px;
+        background-color: #DDDCDB;
+    }
+
+    &_list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        @include media(600px) {
+            gap: 5px;
+        }
+    }
+
+    &_main {
+        display: flex;
+        justify-content: space-between;
+
+        @include media(900px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        @include media(600px) {
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+            text-align: center;
+
+        }
+    }
+
+    &_link,
+    &_main_text {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+
+    &_main_text {
+        font-weight: 600;
+    }
+
+    &_bottom {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width:1450px) {
+            gap: 30px;
+        }
+
+        &_card {
+            margin-top: 190px;
+
+            &_links {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+            }
+        }
+
+        &_cardmini {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        &_link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 28px;
+            background: #EEEDEB;
+            border-radius: 32px;
+            font-family: 'Inter', sans-serif;
+            font-size: 13.67px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+
+        &_subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+
+        }
+
+        &_box2 {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        &_text_box {
+            display: flex;
+            gap: 50px;
+        }
+
+        &_card2 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 330px;
+            width: 100%;
+        }
+
+        &_text {
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            color: #B9B9B9;
+        }
+    }
+}
