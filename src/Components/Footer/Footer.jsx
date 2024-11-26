@@ -62,7 +62,7 @@ const Footer = () => {
                             <li><a href="#!" className="footer_link">Противодействие мошенничеству</a></li>
                         </ul>
                     </div>
-                    {/* <div className="footer_border"></div>
+                    <div className="footer_border"></div>
                     <div className="footer_bottom">
                         <div className="footer_bottom_box">
                             <a href="#!" className='footer_logo'>
@@ -128,7 +128,7 @@ const Footer = () => {
                             </div>
                             <p className="footer_bottom_text">Продолжая использовать сайт, вы принимаете пользовательское соглашение</p>
                         </div>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </div>
